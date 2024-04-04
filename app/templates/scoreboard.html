@@ -5,7 +5,6 @@
         <title>PYCTF 2024 Scoreboard</title>
         <!-- 添加背景图片 -->
 		<script id="MathJax-script" async src="../static/tex-mml-chtml.js"></script>
-
         <style>
             body {
                 background-image: url('../static/background.png');
@@ -41,7 +40,7 @@
                 width: auto;
             }
         </style>
-
+	    
     </head>
     <body>
         <table>
@@ -57,7 +56,7 @@
                 <tr>
                     <td>{{ loop.index }}</td>
                     <td>{{ team }}</td>
-                    <td>\( \frac	{{'{'}}{{  score.numerator }}{{'}{'}}{{score.denominator }}{{'}'}} \)</td>
+                    <td>\(\frac{{'{'}}{{score.numerator}}{{'}{'}}{{score.denominator}}{{'}'}}\)</td>
                 </tr>
                 {% endfor %}
             </tbody>
